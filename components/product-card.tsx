@@ -6,6 +6,8 @@ type Props = {
   name: string;
   price: string;
   imgSrc: string;
+  productId:number;
+  quantity:number
 };
 
 const ProductCard = ({ name, price, imgSrc }: Props) => {
