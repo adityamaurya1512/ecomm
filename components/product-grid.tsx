@@ -1,15 +1,23 @@
 "use client"
 import React, { useState , useEffect} from'react';
 import ProductCard from './product-card';
+import { getUserEmail } from "@/actions/getUser"
+import { useUser } from "@/context/userContext";
 interface Product {
   id: number;
   name: string;
-  price: string;
+  price: number;
   image: string;
-  quantity: number;
+  stock: number;
 }
-const ProductGrid =  () => {
+interface ProductGridProps {
+  email: string;
+}
+const ProductGrid =   () => {
+  let {email} = useUser()
+  
   const [products, setProducts] = useState<Product[]>([]);
+ 
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch('/data.json');
@@ -19,6 +27,7 @@ const ProductGrid =  () => {
 
     fetchProducts();
   }, []);
+ 
   const itemsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -43,7 +52,7 @@ const ProductGrid =  () => {
   return (
     <div className="min-h-screen flex flex-col items-center"><section className="flex-grow flex items-center justify-center py-10 mt-[70px]"><div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl">
           {currentProducts.map((currentProduct) => (
-            <ProductCard name={currentProduct.name} key={currentProduct.id} imgSrc={currentProduct.image} price={currentProduct.price} productId={currentProduct.id} quantity={currentProduct.quantity}
+            <ProductCard name={currentProduct.name} key={currentProduct.id} imgSrc={currentProduct.image} price={currentProduct.price} productId={currentProduct.id} stock={currentProduct.stock} email={email} 
             />
           ))}
         </div></section><div className="flex justify-center space-x-4 mb-10"><button
