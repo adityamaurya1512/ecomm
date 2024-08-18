@@ -1,18 +1,15 @@
 [
-{"id":1,"name":"Product 1","price":10,"image":"/camera.jpeg","stock":4},
-{"id":2,"name":"Product 2","price":10,"image":"/camera.jpeg","stock":4},
-{"id":3,"name":"Product 3","price":10,"image":"/camera.jpeg","stock":4},
-{"id":4,"name":"Product 4","price":10,"image":"/camera.jpeg","stock":4},
-{"id":5,"name":"Product 5","price":10,"image":"/camera.jpeg","stock":4},
-{"id":6,"name":"Product 6","price":10,"image":"/camera.jpeg","stock":4},
-{"id":7,"name":"Product 7","price":10,"image":"/camera.jpeg","stock":4},
-{"id":8,"name":"Product 8","price":10,"image":"/camera.jpeg","stock":4},
-{"id":9,"name":"Product 9","price":10,"image":"/camera.jpeg","stock":4},
-{"id":10,"name":"Product 10","price":10,"image":"/camera.jpeg","stock":4},
-{"id":11,"name":"Product 11","price":10,"image":"/camera.jpeg","stock":4},
-{"id":12,"name":"Product 12","price":10,"image":"/camera.jpeg","stock":4},
-{"id":13,"name":"Product 13","price":10,"image":"/camera.jpeg","stock":4},
-{"id":14,"name":"Product 14","price":10,"image":"/camera.jpeg","stock":4},
-{"id":15,"name":"Product 15","price":10,"image":"/camera.jpeg","stock":4},
-{"id":16,"name":"Product 16","price":10,"image":"/camera.jpeg","stock":4}
+{"id":1,"name":"camera","price":10,"image":"/camera.jpeg","stock":4},
+{"id":2,"name":"laptop","price":100,"image":"/laptop.jpeg","stock":4},
+{"id":3,"name":"watch","price":200,"image":"/watch.jpg","stock":4},
+{"id":4,"name":"watch","price":200,"image":"/watch.jpg","stock":4},
+{"id":5,"name":"television","price":70,"image":"/television.jpeg","stock":4},
+{"id":6,"name":"iron","price":10,"image":"/iron.jpeg","stock":4},
+{"id":7,"name":"book","price":8,"image":"/book.jpeg","stock":4},
+{"id":8,"name":"iphone","price":120,"image":"/iphone.jpeg","stock":4},
+{"id":9,"name":"gaming console","price":190,"image":"/console.jpeg","stock":4},
+{"id":10,"name":"sunglass","price":70,"image":"/sunglass.jpeg","stock":4},
+{"id":11,"name":"ring","price":80,"image":"/ring.jpeg","stock":4},
+{"id":12,"name":"pendent","price":120,"image":"/pendent.jpeg","stock":4}
+
 ]
